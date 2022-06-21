@@ -1,0 +1,43 @@
+{
+	"compiler": {
+		"version": "0.5.7+commit.6da8b019"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"will.sol": "Will"
+		},
+		"evmVersion": "petersburg",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"will.sol": {
+			"keccak256": "0xca16a2e1514c0776b8d1d17a8c49cb70f221ed48b301bba4a0d615bd5328be66",
+			"urls": [
+				"bzzr://1e08518bb2a3f4283f9a281beb5081189ac4d04b7280603f60d43bfdf46bc3d0"
+			]
+		}
+	},
+	"version": 1
+}
