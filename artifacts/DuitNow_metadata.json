@@ -7,6 +7,15 @@
 		"abi": [
 			{
 				"constant": false,
+				"inputs": [],
+				"name": "recname",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
 				"inputs": [
 					{
 						"name": "wallet",
@@ -17,7 +26,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "setInheritance",
+				"name": "recaccount",
 				"outputs": [],
 				"payable": false,
 				"stateMutability": "nonpayable",
@@ -39,7 +48,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"will.sol": "Will"
+			"Transfer.sol": "DuitNow"
 		},
 		"evmVersion": "petersburg",
 		"libraries": {},
@@ -50,10 +59,10 @@
 		"remappings": []
 	},
 	"sources": {
-		"will.sol": {
-			"keccak256": "0xd5fe9bbd4411d01baadc0fe86549b2bdb25b786c12a740f1a5c067809e261353",
+		"Transfer.sol": {
+			"keccak256": "0xc3ef08105ae6fdc19eaa2204db407dc7d4495d43b2b7fbde9316d1be4978d57e",
 			"urls": [
-				"bzzr://98ee8f9bb58963f4e55d1355a09f236bd3980684bf2985f5fabbc9d6a3bbf82e"
+				"bzzr://4483ef5fcd8d0fcd7d026cd7d49f524dd99e60fdd8dee85c6ba635c143e4c61d"
 			]
 		}
 	},

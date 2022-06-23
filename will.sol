@@ -18,12 +18,7 @@ contract Will {
         _;
     }
 
-    modifier mustbedeceased {
-        require(deceased == true);
-        _;
-    }
-
-    address payable[] familyWallets;
+    address payable[] Wallets;
 
     mapping(address => uint) Inheritance;
 
@@ -33,13 +28,9 @@ contract Will {
     }
 
     function payout() private mustbedeceased {
-        for(uint i=0; i<familyWallets.length; i++) {
-            familyWallets[i].transfer(Inheritance[familyWallets[i]]);
+        for(uint i=0; i<Wallets.length; i++) {
+            Wallets[i].transfer(Inheritance[familyWallets[i]]);
         }
     }
 
-    function hasdeceased() public onlyOwner {
-        deceased = true;
-        payout();
-    }
 }

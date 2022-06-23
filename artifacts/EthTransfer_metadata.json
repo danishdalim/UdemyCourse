@@ -17,7 +17,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "setInheritance",
+				"name": "setbalance",
 				"outputs": [],
 				"payable": false,
 				"stateMutability": "nonpayable",
@@ -39,7 +39,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"will.sol": "Will"
+			"Transfer.sol": "EthTransfer"
 		},
 		"evmVersion": "petersburg",
 		"libraries": {},
@@ -50,10 +50,10 @@
 		"remappings": []
 	},
 	"sources": {
-		"will.sol": {
-			"keccak256": "0xd5fe9bbd4411d01baadc0fe86549b2bdb25b786c12a740f1a5c067809e261353",
+		"Transfer.sol": {
+			"keccak256": "0x537584a93c7693936a8cfad085e57df2421bb9762ee771b63a07824ff56669ff",
 			"urls": [
-				"bzzr://98ee8f9bb58963f4e55d1355a09f236bd3980684bf2985f5fabbc9d6a3bbf82e"
+				"bzzr://b9211471409c35b61b0a75d61af2b5b3e94c86685114bbf2629670f650160ead"
 			]
 		}
 	},
