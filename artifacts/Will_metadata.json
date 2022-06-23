@@ -6,6 +6,33 @@
 	"output": {
 		"abi": [
 			{
+				"constant": false,
+				"inputs": [],
+				"name": "hasdeceased",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "wallet",
+						"type": "address"
+					},
+					{
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "setInheritance",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"payable": true,
 				"stateMutability": "payable",
@@ -33,9 +60,9 @@
 	},
 	"sources": {
 		"will.sol": {
-			"keccak256": "0xca16a2e1514c0776b8d1d17a8c49cb70f221ed48b301bba4a0d615bd5328be66",
+			"keccak256": "0x4eae50eac9305aed061b47236787c40c4871841273e189c77781a359a980ff56",
 			"urls": [
-				"bzzr://1e08518bb2a3f4283f9a281beb5081189ac4d04b7280603f60d43bfdf46bc3d0"
+				"bzzr://e8b0ac5aa4a792d948b5a298579f4fbd67ec1927b2bcc1a7e7d89709e58b9d26"
 			]
 		}
 	},

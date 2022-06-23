@@ -13,12 +13,12 @@ contract Will {
     
     }
 
-    modifier onlyOwner() {
+    modifier onlyOwner {
         require(msg.sender == owner);
         _;
     }
 
-    modifier mustbedeceased() {
+    modifier mustbedeceased {
         require(deceased == true);
         _;
     }
@@ -27,9 +27,19 @@ contract Will {
 
     mapping(address => uint) Inheritance;
 
-    function setInheritance(address payable wallet, uint amount) public {
+    function setInheritance(address payable wallet, uint amount) public onlyOwner {
         familyWallets.push(wallet);
         Inheritance[wallet] = amount;
     }
 
+    function payout() private mustbedeceased {
+        for(uint i=0; i<familyWallets.length; i++) {
+            familyWallets[i].transfer(Inheritance[familyWallets[i]]);
+        }
+    }
+
+    function hasdeceased() public onlyOwner {
+        deceased = true;
+        payout();
+    }
 }
